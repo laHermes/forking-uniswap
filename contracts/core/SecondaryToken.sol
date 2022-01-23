@@ -1,7 +1,7 @@
-pragma solidity =0.5.16;
+pragma solidity ^0.6.6;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract SecondaryToken is ERC20 {
-    constructor() ERC20("SecondaryToken", "TKN2") {}
+    constructor() public ERC20("SecondaryToken", "TKN2") {}
 }
